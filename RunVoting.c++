@@ -16,5 +16,19 @@
 
 int main () {
     using namespace std;
+    int i = 0;
+    int j = 0;
+    Ballot b[20];
+    voting_read_args(std::cin, i);
+    voting_read_cand(std::cin, j, b);
+    int k = 0;
+    while (k < j){
+    	std::cout << b[k].s << std::endl;
+    	++k;
+    }
+    int totalVotes = 0;
+    while(voting_read_ballot(std::cin, b)){
+      ++totalVotes;
+    }
     return 0;
 }
