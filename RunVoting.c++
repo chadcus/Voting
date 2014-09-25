@@ -23,12 +23,13 @@ int main () {
     voting_read_cand(std::cin, j, b);
     int k = 0;
     while (k < j){
-    	std::cout << b[k].s << std::endl;
     	++k;
     }
     int totalVotes = 0;
     while(voting_read_ballot(std::cin, b)){
       ++totalVotes;
     }
+    std::string s = voting_eval(totalVotes, j, b);
+    std::cout << s << std::endl;
     return 0;
 }
