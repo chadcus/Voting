@@ -24,4 +24,5 @@ bool voting_read_ballot (std::istream&, Ballot b[]);
 
 std::string voting_eval(int&, int&, Ballot b[]);
 
+void voting_solve(std::istream&, std::ostream&);
 #endif

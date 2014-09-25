@@ -1,0 +1,49 @@
+        -:    0:Source:Voting.h
+        -:    0:Graph:TestVoting.gcno
+        -:    0:Data:TestVoting.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#ifndef Voting_h
+        -:    2:#define Voting_h
+        -:    3:
+        -:    4:// --------
+        -:    5:// includes
+        -:    6:// --------
+        -:    7:
+        -:    8:#include <iostream> 
+        -:    9:#include <string>
+        -:   10:#include <vector>
+        -:   11:
+function _ZN6BallotD2Ev called 0 returned 0% blocks executed 0%
+function _ZN6BallotC2Ev called 0 returned 0% blocks executed 0%
+    #####:   12:struct Ballot{
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+call   10 never executed
+call   11 never executed
+call   12 never executed
+call   13 never executed
+        -:   13:	/* data */
+        -:   14:	std::string s = "";
+        -:   15:	std::vector<std::string> v;
+        -:   16:	int count = 0;
+        -:   17:};
+        -:   18:
+        -:   19:void voting_read_args (std::istream&, int&);
+        -:   20:
+        -:   21:void voting_read_cand (std::istream&, int&, Ballot b[]);
+        -:   22:
+        -:   23:bool voting_read_ballot (std::istream&, Ballot b[]);
+        -:   24:
+        -:   25:std::string voting_eval(int&, int&, Ballot b[]);
+        -:   26:
+        -:   27:void voting_solve(std::istream&, std::ostream&);
+        -:   28:#endif

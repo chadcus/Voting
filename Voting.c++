@@ -126,3 +126,28 @@ std::string voting_eval(int& totalVotes, int& cand, Ballot b[]){
     min = 1001;
   }
 }
+
+void voting_solve(std::istream& r, std::ostream& w){
+  int i = 0;
+  
+  voting_read_args(r, i);
+    
+  while(i > 0){
+    int j = 0;
+    Ballot b[20];
+    voting_read_cand(r, j, b);
+
+    int totalVotes = 0;
+    while(voting_read_ballot(r, b)){
+      ++totalVotes;
+    }
+    std::string s = voting_eval(totalVotes, j, b);
+    if(i == 1){
+      w << s << std::endl;
+    }
+    else{
+      w << s << std::endl << std::endl;
+    }
+    --i;
+  }
+}
