@@ -1,9 +1,18 @@
+#ifdef ONLINE_JUDGE
+    #define NDEBUG
+#endif
+
 #include <cassert>  
 #include <iostream> 
 #include <sstream>
 #include <string>
+#include <vector>
 
-#include "Voting.h"
+struct Ballot{
+  std::string s = "";
+  std::vector<std::string> v;
+  int count = 0;
+};
 
 void voting_read_args(std::istream& r, int& i){
   std::string s;
@@ -44,17 +53,17 @@ bool voting_read_ballot(std::istream& r, Ballot b[]){
     return false;
   }
   else{
-  	// std::cout << s << std::endl;
+    // std::cout << s << std::endl;
     ss >> i;
     getline (ss, s);
-	  b[i-1].v.push_back(s);
-	  ++b[i-1].count;
+    b[i-1].v.push_back(s);
+    ++b[i-1].count;
     return true;
   }
 }
 
 std::string voting_eval(int& totalVotes, int& cand, Ballot b[]){
-	std::string s = "";
+  std::string s = "";
   std::string ball = "";
   int min = 1001;
   int max = 0;
@@ -125,4 +134,31 @@ std::string voting_eval(int& totalVotes, int& cand, Ballot b[]){
     }
     min = 1001;
   }
+}
+
+int main () {
+  using namespace std;
+  int i = 0;
+  
+  voting_read_args(std::cin, i);
+    
+  while(i > 0){
+    int j = 0;
+    Ballot b[20];
+    voting_read_cand(std::cin, j, b);
+
+    int totalVotes = 0;
+    while(voting_read_ballot(std::cin, b)){
+      ++totalVotes;
+    }
+    std::string s = voting_eval(totalVotes, j, b);
+    if(i == 1){
+      std::cout << s << std::endl;
+    }
+    else{
+      std::cout << s << std::endl << std::endl;
+    }
+    --i;
+  }
+  return 0;
 }
