@@ -11,7 +11,6 @@
 
 struct Ballot{
 	/* data */
-	bool loser = false;
 	std::string s = "";
 	std::vector<std::string> v;
 	int count = 0;
