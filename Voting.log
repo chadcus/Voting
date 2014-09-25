@@ -1,0 +1,41 @@
+commit bd312be180e76ebbfb4dbc1513140e920d1d5f7c
+Author: Chad Custodio <aitan791@cs.utexas.edu>
+Date:   Thu Sep 25 17:59:05 2014 -0500
+
+    Ran Doxygen
+
+commit 689b8f489543ec47bb5c3a20f01c73ee24552d36
+Author: Chad Custodio <aitan791@cs.utexas.edu>
+Date:   Thu Sep 25 17:47:19 2014 -0500
+
+    Finished Test Cases
+
+commit d30154787ce6c8fadc45470d79f569152fad6161
+Author: Chad Custodio <aitan791@cs.utexas.edu>
+Date:   Thu Sep 25 16:49:06 2014 -0500
+
+    Passes UVa
+
+commit 781edd0b343f9c54cdf7c5775bc2fcc1fb956a72
+Author: Chad Custodio <aitan791@cs.utexas.edu>
+Date:   Thu Sep 25 14:18:10 2014 -0500
+
+    Simple Solution
+
+commit b9bee8348a8c7e2fdce05f01845ba41e8f25754f
+Author: Chad Custodio <aitan791@cs.utexas.edu>
+Date:   Thu Sep 25 13:06:00 2014 -0500
+
+    No vote and Absolute winner
+
+commit c9f57ae26f1442d0cf724baa2723577a8ca6aba0
+Author: Chad Custodio <aitan791@cs.utexas.edu>
+Date:   Tue Sep 23 20:30:49 2014 -0500
+
+    Able to output the input
+
+commit eb73cdf3d019250a177d01362e6cc34a06ab3de4
+Author: Chad Custodio <aitan791@cs.utexas.edu>
+Date:   Tue Sep 23 19:44:14 2014 -0500
+
+    Added first few files
